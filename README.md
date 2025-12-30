@@ -15,7 +15,12 @@ Generate a yearly calendar in Excel with custom day cells, weekday triangles, an
   - pillow
   - cairosvg (optional, for SVG rendering; falls back to PIL if missing)
 
-Install:
+Install (recommended):
+```bash
+pip install -r requirements.txt
+```
+
+Install (manual):
 ```bash
 pip install openpyxl pillow cairosvg
 ```
@@ -33,6 +38,19 @@ python yearly_calendar.py
 
 Output:
 - `yearly_calendar_{year}.xlsx` in the project root.
+
+## Example
+```bash
+python yearly_calendar.py
+```
+
+You can change the year in `yearly_calendar.py`:
+```python
+year = 2026  # set your year, or None for current year
+```
+
+## Screenshot
+Add a screenshot of the exported Excel if you want to showcase the output.
 
 ## Configuration
 Most layout and style settings live in:
